@@ -1,11 +1,14 @@
-import 'package:alumni/views/Intro.dart';
 import 'package:alumni/views/MyAd.dart';
 import 'package:alumni/views/SearchOrAddItems.dart';
 import 'package:alumni/views/SignIn.dart';
 import 'package:alumni/views/SignUp.dart';
+import 'package:alumni/views/IntroductionPages.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox('');
   runApp(MyApp());
 }
 
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xffE6E6FA),
         primarySwatch: Colors.purple,
       ),
-      home: introduct(),
+      home: IntroductionPage(),
     );
   }
 }
