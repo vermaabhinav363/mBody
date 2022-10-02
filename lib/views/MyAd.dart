@@ -113,7 +113,7 @@ class _MyAdState extends State<MyAd> {
                                     ButtonBar(
                                       alignment: MainAxisAlignment.spaceAround,
                                       children: [
-                                        FlatButton(
+                                        ElevatedButton(
                                           child: Text('Delete'),
                                           onPressed: () {
                                             DocumentSnapshot ds = streamSnapshot.data!.docs[index];
@@ -221,7 +221,7 @@ class _MyAdState extends State<MyAd> {
                                     ButtonBar(
                                       alignment: MainAxisAlignment.spaceAround,
                                       children: [
-                                        FlatButton(
+                                        ElevatedButton(
                                           child: Text('Delete'),
                                           onPressed: () {
                                             DocumentSnapshot ds = streamSnapshot.data!.docs[index];

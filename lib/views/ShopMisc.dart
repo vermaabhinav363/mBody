@@ -134,7 +134,7 @@ class _ShopMiscState extends State<ShopMisc> {
                                             alignment: MainAxisAlignment.spaceAround,
                                             children: [
 
-                                              FlatButton(
+                                              ElevatedButton(
                                                 child: Text('Contact'),
                                                 onPressed: () {
                                                   createChatRoomAndStartConversation( streamSnapshot.data!.docs[index]
@@ -144,7 +144,7 @@ class _ShopMiscState extends State<ShopMisc> {
                                               ),
                                             ],
                                           ),
-                                          Constants.myName=="vermaabhinav363"?FlatButton(
+                                          Constants.myName=="vermaabhinav363"?ElevatedButton(
                                             child: Text('Delete'),
                                             onPressed: () {
                                               DocumentSnapshot ds = streamSnapshot.data!.docs[index];

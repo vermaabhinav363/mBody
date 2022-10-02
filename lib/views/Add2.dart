@@ -137,14 +137,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                       fallbackWidth: double.infinity,
                     ),
                     (ImageUrl == "test")
-                        ? RaisedButton(
-                      color: Colors.white,
+                        ? ElevatedButton(
+                      //color: Colors.white,
                       onPressed: () {
                         UploadImage();
                       },
                       child: Text("Capture Image"),
                     )
-                        : RaisedButton(
+                        : ElevatedButton(
                       onPressed: () {
                         setState(() {
                           ImageUrl = "test";

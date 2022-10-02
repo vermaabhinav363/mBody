@@ -91,8 +91,8 @@ class _SetCourseState extends State<SetCourse> {
                 ),
               ),
             ),
-            FlatButton(
-                color: Colors.grey[200],
+            ElevatedButton(
+                //color: Colors.grey[200],
                 onPressed: () {
                   if(CourseEditingController.text==""){
                     showAlertDialog(context, "Course name can not be empty. ");

@@ -168,8 +168,8 @@ class _SignInState extends State<SignIn> {
                           borderRadius: BorderRadius.circular(20)),
                       minWidth: 300.0,
                       height: 50.0,
-                      child: RaisedButton(
-                        color: Color(0xffb000080),
+                      child: ElevatedButton(
+                        //color: Color(0xffb000080),
                         child: Text("Sign In",
                             style: TextStyle(color: Colors.white)),
                         onPressed: () {

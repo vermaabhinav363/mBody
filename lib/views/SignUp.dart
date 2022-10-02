@@ -175,9 +175,10 @@ class _signUpState extends State<signUp> {
                                 borderRadius: BorderRadius.circular(20)),
                             minWidth: 300.0,
                             height: 50.0,
-                            child: RaisedButton(
+                            child: ElevatedButton(
 
-                              color: Color(0xffb000080),
+                              //color: Color(0xffb000080),
+                              //color: Color(0xffb000080),
 
                               child:Text("Sign Up",style:TextStyle(color: Colors.white)),
                               onPressed: (){

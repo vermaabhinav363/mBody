@@ -153,7 +153,7 @@ class _ShopBookState extends State<ShopBook> {
                                       alignment: MainAxisAlignment.spaceAround,
                                       children: [
 
-                                        FlatButton(
+                                        ElevatedButton(
                                           child: Text('Contact'),
                                           onPressed: () {
                                             createChatRoomAndStartConversation( streamSnapshot.data!.docs[index]
@@ -163,7 +163,7 @@ class _ShopBookState extends State<ShopBook> {
                                         ),
                                       ],
                                     ),
-                                    Constants.myName=="vermaabhinav363"?FlatButton(
+                                    Constants.myName=="vermaabhinav363"?ElevatedButton(
                                       child: Text('Delete'),
                                       onPressed: () {
                                         DocumentSnapshot ds = streamSnapshot.data!.docs[index];
