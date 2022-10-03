@@ -1,7 +1,9 @@
+import 'package:alumni/views/ForgotPassword.dart';
 import 'package:alumni/views/Intro.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:hive/hive.dart';
+import 'package:lottie/lottie.dart';
 
 
 class IntroductionPage extends StatelessWidget {
@@ -15,10 +17,30 @@ class IntroductionPage extends StatelessWidget {
       body: IntroductionScreen(
         pages: [
           PageViewModel(
-            titleWidget: Container(
+            titleWidget: Column(
+              children: [
 
+                Container(
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  // decoration: BoxDecoration(
+                    // border: Border.all()
+                  // ),
+                  // height: 600
+
+                  child: (
+                    Lottie.network(
+                        'https://assets10.lottiefiles.com/packages/lf20_vxtEG7.json')
+                  ),
+                ),
+              ],
             ),
-            bodyWidget: Container(),
+            bodyWidget: Container(
+
+              child: Text(
+                'Hello Dear! \n Welcome to mBody',style: TextStyle(fontSize: 50),textAlign: TextAlign.center,
+              ),
+            ),
             decoration: const PageDecoration(
               pageColor: Color(0x333D79FF),
               contentMargin: EdgeInsets.only(),
@@ -26,8 +48,20 @@ class IntroductionPage extends StatelessWidget {
             reverse: true,
           ),
           PageViewModel(
-              titleWidget: Container(),
-              bodyWidget: Container(),
+              titleWidget: Container(
+                child: (
+                    Lottie.network(
+                        'https://assets10.lottiefiles.com/packages/lf20_vxtEG7.json')
+                ),
+              ),
+              bodyWidget: Container(
+                child: (
+                   Text(
+                     'Get a proper Assessment of your mental fitness', style: TextStyle(color: Colors.yellow, fontSize:50),textAlign: TextAlign.center
+                     ,
+                   )
+                ),
+              ),
               decoration: const PageDecoration(
                 pageColor: Colors.black,
                 contentMargin: EdgeInsets.only(),
