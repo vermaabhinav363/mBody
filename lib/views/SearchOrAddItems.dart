@@ -1,16 +1,15 @@
-
 import 'dart:math';
 import 'package:alumni/helper/Helperfunction.dart';
 import 'package:alumni/helper/constants.dart';
 import 'package:alumni/services/auth.dart';
 import 'package:alumni/services/database.dart';
 import 'package:alumni/views/AddItem.dart';
-import 'package:alumni/views/Conversation.dart';
-import 'package:alumni/views/Intro.dart';
+import 'package:alumni/views/Conversation/Conversation.dart';
 import 'package:alumni/views/MyAd.dart';
 import 'package:alumni/views/SearchCourse.dart';
 import 'package:alumni/views/SetCourse.dart';
 import 'package:alumni/views/Shop.dart';
+import 'package:alumni/views/SignIn_SignUp/SignIn.dart';
 import 'package:alumni/widget/widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
@@ -170,7 +169,7 @@ class _SearchAddState extends State<SearchAdd> {
               Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => introduct()));
+                      builder: (BuildContext context) => SignIn()));
             },
             child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 15),

@@ -1,14 +1,17 @@
+import 'package:alumni/views/ExpertPage/ExpertPage.dart';
+import 'package:alumni/views/HomePage/HomePage.dart';
 import 'package:alumni/views/MyAd.dart';
+import 'package:alumni/views/OnBoardingPages/OnBoardingPage1.dart';
+import 'package:alumni/views/OnBoardingPages/OnBoardingPage2.dart';
 import 'package:alumni/views/SearchOrAddItems.dart';
-import 'package:alumni/views/SignIn.dart';
-import 'package:alumni/views/SignUp.dart';
-import 'package:alumni/views/IntroductionPages.dart';
+import 'package:alumni/views/SignIn_SignUp/SignIn.dart';
+import 'package:alumni/views/SignIn_SignUp/SignUp.dart';
+import 'package:alumni/views/SleepModules/SleepMusicPlayer.dart';
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+
 
 void main() async {
-  await Hive.initFlutter();
-  await Hive.openBox('');
+
   runApp(MyApp());
 }
 
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/signUp': (context) => signUp(),
+        '/signUp': (context) => SignUp(),
         '/signIN': (context) => SignIn(),
         '/MyAd': (context) => MyAd(),
         '/Search': (context) => SearchAdd(),
@@ -26,10 +29,9 @@ class MyApp extends StatelessWidget {
       title: 'mBody',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xffE6E6FA),
-        primarySwatch: Colors.purple,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: IntroductionPage(),
+      home: OnBoardingPage1()
     );
   }
 }

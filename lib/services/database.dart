@@ -6,9 +6,9 @@ class DatabaseMethods {
      return await FirebaseFirestore.instance.collection("Users").where("name", isEqualTo: username).get();
   }
   getUserByEmail(String email) async {
-    return await FirebaseFirestore.instance.collection("Users").where("email", isEqualTo: email).get();
+    return await FirebaseFirestore.instance.collection("Users").where("email", isEqualTo: email).snapshots();
   }
-  getWetherExistByEmail(String email) async {
+  getWeatherExistByEmail(String email) async {
     return await FirebaseFirestore.instance.collection("Users").where("email", isEqualTo: email).snapshots();
   }
   uploadUserInfo(userMap) async {

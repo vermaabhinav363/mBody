@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:alumni/helper/constants.dart';
 import 'package:alumni/services/database.dart';
-import 'package:alumni/views/Conversation.dart';
+import 'package:alumni/views/Conversation/Conversation.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
